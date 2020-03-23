@@ -1,0 +1,103 @@
+.stats
+{
+    background: #000;
+    padding-top: 250px;
+    margin-top: -250px;
+}
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+    align-items: center;
+    grid-gap: 200px;
+    width: 1200px;
+}
+.container .Bx
+{
+    position: relative;
+    width: 500px;
+    height: 320px;
+    background: #000;
+}
+.container .Bx .ImgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .Bx .ImgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .Bx .contBx
+{
+    position: absolute;
+    top:40px;
+    bottom: 40px;
+    right: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+.container .Bx:hover .contBx
+{
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+    
+}
+.container .Bx .contBx .cont
+{
+    position: relative;
+    opacity: 0;
+   
+}
+.container .Bx:hover .contBx .cont 
+{
+    opacity: 1;
+    transition: 0.5;
+    transition-delay: 0.5s;
+}
+.container .Bx .contBx .cont h3
+{
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.container .Bx .contBx .cont p
+{
+    color: #fff;
+    font-weight: 300;
+}
+.white
+{
+    color: #fff;
+}
+.Btn
+{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: lightblue;
+    text-decoration: none;
+    border-radius: 80px;
+}
+.Btn:hover
+{
+    color: red;
+}
