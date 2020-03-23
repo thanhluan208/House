@@ -13,8 +13,13 @@
     <script src="https://kit.fontawesome.com/0d06166cbb.js"></script>
 </head>
 <body>
+    <div id="scrollPath"></div>
+    <div id="progressbar"></div>
+    <div class="preloader">
+        <div class="counter">0</div>
+    </div>
     <header>
-        <a href="#" class="logo">LOGO</a>
+        <a href="#" class="logo">Name</a>
         <ul>
             <li><a href="#" class="hover" >Home</a></li>
             <li><a href="#" class="hover">About</a></li>
@@ -25,14 +30,14 @@
     </header>
     <!-- section1:Home -->
     <section class="banner">
-        <h2>Need Room<br>For <span>Office?</span></h2>
+        <h2>Title<br> And <span>Slogan</span></h2>
     </section>
     <!-- section2:About -->
     <section class="sec" id="about">
         <div class="content">
             <div class="mxw800p fade-in">
                 <h3>About Us</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis numquam, in error consequatur laudantium totam dicta facere eius voluptatum aspernatur quidem porro, voluptatibus a cumque ex illum eum neque enim?</p>
+                <p> sit amet consectetur adipisicLorem ipsum doloring elit. Perspiciatis numquam, in error consequatur laudantium totam dicta facere eius voluptatum aspernatur quidem porro, voluptatibus a cumque ex illum eum neque enim?</p>
                 <a href="#"class="btn"><span>For More Information</span></a>
             </div>
             <div class="Achievement fade-in">
@@ -61,6 +66,7 @@
             <div class="mxw800p fade-in">
                 <h3 class="white">Room for Rent</h3>
                 <p class="white">Hover Images For More Info</p>
+                <p class="white"> sit amet consectetur adipisicLorem ipsum doloring elit. Perspiciatis numquam</p>
             </div>
             <div class="container">
                 <div class="Bx">
@@ -200,11 +206,35 @@
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>  
     <script type="text/javascript">
+                // scriptHeader //
         window.addEventListener('scroll',function(){
             var header = document.querySelector('header')
             header.classList.toggle('sticky',window.scrollY > 0)
         });
+                // scriptPreloader //
+        function counter(){
+            var count = setInterval(function(){
+                var c = parseInt($('.counter').text());
+                $('.counter').text((++c).toString());
+                if (c == 100)
+                {
+                    clearInterval(count);
+                    $('.counter').addClass('hide');
+                    $('.preloader').addClass('active')
+                }
+            },60)                            
+        }
+        counter()
+                // scriptScrollbar //
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset /totalHeight) * 100;
+            progress.style.height = progressHeight + '%';
+        }
+
     </script>
     <script src="house.js"></script>
+    
 </body>
 </html>
