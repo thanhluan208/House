@@ -1,0 +1,90 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(-45deg,#23a6d5,#23a6d5,#45a38b,#bff2e5);
+    background-size: 400%,400%;
+    animation: gradient 6s ease-in-out infinite;
+}
+@keyframes gradient {
+    0%
+    {
+        background-position:0 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0 50%;
+    }
+}
+.container
+{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-template-rows: minmax(200px,auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+    box-shadow: -20px -20px 20px rgba(255, 255, 255, 0.4),
+                    20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.container .box
+{
+    background: #333;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: #000;
+    transition: 0.5s;
+    
+}
+.container .box:nth-child(1)
+{
+    grid-column: span 2;
+    grid-row: span 2;
+    background: #fff;
+}
+.container .box:nth-child(1) h1
+{
+    font-family: 'Dancing Script', cursive;
+}
+.container .box:nth-child(1) span
+{
+    position: absolute;
+    bottom: 232%;
+    left: 1%;
+    font-size: 22px;
+    font-weight: 2em;
+}
+.container .box:nth-child(2)
+{
+    grid-column: span 3;
+    grid-row: span 2;
+}
+.container .box:nth-child(3) p
+{
+    font-size: 24px;
+}
+.container .box:nth-child(4) p
+{
+    font-size: 36px;
+}
+.container .box:nth-child(4) span
+{
+    color: #23a6d5;
+}

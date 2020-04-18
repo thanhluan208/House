@@ -1,0 +1,42 @@
+.section2
+{
+    background: #fff;
+}
+.bigboss
+{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+    grid-template-rows: minmax(400px,auto);
+    grid-gap: 10px;
+}
+
+.bigboss .smallboss
+{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.bigboss .smallboss:nth-child(1)
+{   
+    grid-row: span 2;
+    font-size: 24px;
+}
+.bigboss .smallboss:nth-child(2) 
+{
+    font-size: 24px;
+    grid-row: span 2;
+}
+.bigboss .smallboss:nth-child(4)
+{
+    font-size: 24px;
+    grid-row: span 2;
+    height: 400px;
+}
+.bigboss .smallboss:nth-child(3) 
+{
+    font-size: 24px;
+    grid-row: span 2;
+    height: 400px;
+}
