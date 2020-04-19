@@ -19,7 +19,7 @@
         <div class="counter">0</div>
     </div>
     <header>
-        <a href="#" class="logo">Name/a>
+        <a href="#" class="logo">Name</a>
         <ul>
             <li><a href="#" class="hover" >Home</a></li>
             <li><a href="#" class="hover">About</a></li>
@@ -36,26 +36,22 @@
     <section class="sec" id="about">
         <div class="content">
             <div class="mxw800p fade-in">
-                <h3>About Us</h3>
+                <h3>About us</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis numquam, in error consequatur laudantium totam dicta facere eius voluptatum aspernatur quidem porro, voluptatibus a cumque ex illum eum neque enim?</p>
                 <a href="#"class="btn"><span>For More Information</span></a>
             </div>
             <div class="Achievement fade-in">
                 <div class="Stat">
-                    <h2>800+</h2>
-                    <h4>Happy Clients</h4>
+                    <img src="trust.png" alt="">
+                    <h2>Truswothy</h2>
                 </div>
                 <div class="Stat">
-                    <h2>10+</h2>
-                    <h4>Different Location</h4>
+                    <img src="team.png" alt="">
+                    <h2>Hospitality</h2>
                 </div>
                 <div class="Stat">
-                    <h2>20+ Years</h2>
-                    <h4>Development and Improvement</h4>
-                </div>
-                <div class="Stat">
-                    <h2>100+</h2>
-                    <h4>Awards</h4>
+                    <img src="professional.png" alt="">
+                    <h2>Professional</h2>
                 </div>
             </div>
         </div>
@@ -101,7 +97,7 @@
                             <h2>Nha so YY</h2>
                             <p>Lorem, ipsum dolor Lorem ipsum dolor sit amet labore int invit quod dolor! sit officia?</p>
                         </div>
-                        <a href="No08.html" class="Btn">More</a>
+                        <a href="#" class="Btn">More</a>
                     </div>
                 </div>
                 <div class="Bx">
@@ -136,9 +132,10 @@
                             <h2>Lien Tran</h2>
                             <span>Founder</span>
                             <div class = "sm">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/lientm"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -152,9 +149,11 @@
                             <h2>Mai Linh</h2>
                             <span>Founder</span>
                             <div class = "sm">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100004938186083"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+
                             </div>
                         </div>
                     </div>
@@ -168,9 +167,10 @@
                             <h2>Tran Thi Tu Lan</h2>
                             <span>Founder</span>
                             <div class = "sm">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100006139007705"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -208,12 +208,12 @@
             let progressHeight = (window.pageYOffset /totalHeight) * 100;
             progress.style.height = progressHeight + '%';
         }
-                // scriptHeader //
+        // scriptHeader //
         window.addEventListener('scroll',function(){
             var header = document.querySelector('header')
             header.classList.toggle('sticky',window.scrollY > 0)
         });
-                // scriptPreloader //
+        // scriptPreloader //
         function counter(){
             var count = setInterval(function(){
                 var c = parseInt($('.counter').text());
