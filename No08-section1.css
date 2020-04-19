@@ -56,7 +56,7 @@
 .container .box:nth-child(1)
 {
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 3;
     background: #fff;
 }
 .container .box:nth-child(1) h1
