@@ -74,6 +74,38 @@
 {
     grid-column: span 3;
     grid-row: span 2;
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+    animation: change-image 20s ease-in-out infinite; 
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-play-state:running ;
+}
+@keyframes change-image 
+{
+    0%
+    {
+        background-image: url(2.jpg);
+    }
+    25%
+    {
+        background-image: url(5.jpg);
+    }
+    50%
+    {
+        background-image: url(3.jpg);
+    }
+    75%
+    {
+        background-image: url(4.jpg);
+    }
+    100%
+    {
+        background-image: url(1.jpg);
+    }
 }
 .container .box:nth-child(3) p
 {
