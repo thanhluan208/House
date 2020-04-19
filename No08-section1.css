@@ -65,7 +65,7 @@
 .container .box:nth-child(1) span
 {
     position: absolute;
-    bottom: 232%;
+    bottom: 100%;
     left: 1%;
     font-size: 22px;
     font-weight: 2em;
