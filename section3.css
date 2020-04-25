@@ -73,13 +73,13 @@
     transition: 0.5;
     transition-delay: 0.5s;
 }
-.container .Bx .contBx .cont h3
+.Bx .contBx .cont h3
 {
     color: #fff;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.container .Bx .contBx .cont p
+.Bx .contBx .cont p
 {
     color: #fff;
     font-weight: 300;
