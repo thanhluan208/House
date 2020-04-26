@@ -37,10 +37,9 @@
     <section class="section2">
         <div class="bigboss">
             <div class="smallboss fade-in">        
-                <img src="6.jpg" alt="">
+                <img src="6.jpg" alt="" id = " img1 ">
                 <div class="button-contain" id="dom">
-                    <button class="btn"> Back </button>
-                    <button class="btn"> Next </button>
+                    <button class="btn" onclick = "imgForward()"> Next </button>
                 </div>
             </div>
             <div class="smallboss fade-in">
@@ -50,10 +49,9 @@
                 <p> Room's Description: <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus consequuntur consequatur magnam perferendis nulla veritatis non esse accusamus, iusto dolore aspernatur eligendi culpa praesentium sint aperiam, animi recusandae! Aspernatur, incidunt!</p>
             </div>
             <div class="smallboss fade-in">
-                <img src="6.jpg" alt="">
+                <img src="6.jpg" alt="" id = " img2 ">
                 <div class="button-contain" id="dom">
-                    <button class="btn"> Back </button>
-                    <button class="btn"> Next </button>
+                    <button class="btn" onclick = "imgForward()"> Next </button>
                 </div>
             </div>
             <div class="smallboss fade-in">
@@ -79,5 +77,68 @@
         </div>
     </section>
     <script src="house.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script>
+        var x = 0
+        var y = 1
+        function imgForward()
+        {
+            if ( 0 <= x < 4)
+            {
+                x++
+            }
+            if (x > 4*y)
+            {
+                x = 1
+            }
+            if ( x == 1)
+            {
+                $("#img1").attr('src','1.jpg')
+            }
+            if ( x == 2)
+                {
+                    $("#img1").attr('src','3.jpg')
+                }
+            if ( x == 3)
+                {
+                    $("#img1").attr('src','4.jpg')
+                }
+            if ( x == 4)
+                {
+                    $("#img1").attr('src','5.jpg')
+                }
+            console.log(x)
+        }
+        function imgForward1()
+        {
+            if ( 0 <= x < 4)
+            {
+                x++
+            }
+            if (x > 4*y)
+            {
+                x = 1
+            }
+            if ( x == 1)
+            {
+                $("#img2").attr('src','1.jpg')
+            }
+            if ( x == 2)
+                {
+                    $("#img2").attr('src','3.jpg')
+                }
+            if ( x == 3)
+                {
+                    $("#img2").attr('src','4.jpg')
+                }
+            if ( x == 4)
+                {
+                    $("#img2").attr('src','5.jpg')
+                }
+            console.log(x)
+        }
+    </script>
 </body>
 </html>
