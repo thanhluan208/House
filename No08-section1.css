@@ -86,31 +86,36 @@
 }
 @keyframes change-image 
 {
-    0%
+    18%
     {
         background-image: url(2.jpg);
     }
-    25%
+    36%
     {
         background-image: url(5.jpg);
     }
-    50%
+    54%
     {
         background-image: url(3.jpg);
     }
-    75%
+    72%
     {
         background-image: url(4.jpg);
     }
-    100%
+    90%
     {
         background-image: url(1.jpg);
     }
 }
 .container .box:nth-child(3) p
 {
-    font-size: 24px;
+    font-size: 36px;
 }
+.container .box:nth-child(3) span
+{
+    color: #23a6d5;
+}
+
 .container .box:nth-child(4) p
 {
     font-size: 36px;
