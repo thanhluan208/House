@@ -88,27 +88,29 @@
             if ( 0 <= x < 4)
             {
                 x++
+                var img1 = document.getElementById('image1')
+                if ( x == 1)
+                {
+                    img1.src = 'pic1.jpeg'
+                }
+                if ( x == 2)
+                    {
+                        img1.src = '2.jpg'
+                    }
+                if ( x == 3)
+                    {
+                        img1.src = '3.jpg'
+                    }
+                if ( x == 4)
+                    {
+                        img1.src = '4.jpg'
+                    }
             }
             if (x > 4*y)
             {
                 x = 1
             }
-            if ( x == 1)
-            {
-                $("#img1").attr('src','1.jpg')
-            }
-            if ( x == 2)
-                {
-                    $("#img1").attr('src','3.jpg')
-                }
-            if ( x == 3)
-                {
-                    $("#img1").attr('src','4.jpg')
-                }
-            if ( x == 4)
-                {
-                    $("#img1").attr('src','5.jpg')
-                }
+            
             console.log(x)
         }
         function imgForward1()
@@ -121,23 +123,23 @@
             {
                 x = 1
             }
-            if ( x == 1)
-            {
-                $("#img2").attr('src','1.jpg')
-            }
-            if ( x == 2)
+            var img2 = document.getElementById('image2')
+                if ( x == 1)
                 {
-                    $("#img2").attr('src','3.jpg')
+                    img2.src = 'pic1.jpeg'
                 }
-            if ( x == 3)
-                {
-                    $("#img2").attr('src','4.jpg')
-                }
-            if ( x == 4)
-                {
-                    $("#img2").attr('src','5.jpg')
-                }
-            console.log(x)
+                if ( x == 2)
+                    {
+                        img2.src = '2.jpg'
+                    }
+                if ( x == 3)
+                    {
+                        img2.src = '3.jpg'
+                    }
+                if ( x == 4)
+                    {
+                        img2.src = '4.jpg'
+                    }
         }
     </script>
 </body>
