@@ -91,7 +91,7 @@ header.sticky ul li a
 .hover:hover
 {
     color: #008dcc;
-    transform: rotateZ(360deg);
+    
     transition-delay: 0.5s;
 }
 .banner
